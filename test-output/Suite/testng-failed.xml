@@ -6,8 +6,6 @@
       <class name="com.TestYantra.USAP1Project.scripts.PostOperation">
         <methods>
           <include name="tc2"/>
-          <include name="configAS"/>
-          <include name="configBS"/>
         </methods>
       </class> <!-- com.TestYantra.USAP1Project.scripts.PostOperation -->
     </classes>

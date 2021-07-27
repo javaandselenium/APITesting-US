@@ -7,7 +7,7 @@ import java.io.IOException;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
-import com.TestYantra.USAPIproject.genericLib.BaseClass;
+
 import com.TestYantra.USAPIproject.genericLib.JavaUtility;
 import com.TestYantra.USAPIproject.genericLib.PropertyFiledata;
 import com.TestYantra.USAPIproject.pojoLib.Project;
@@ -22,11 +22,11 @@ public class PostOperation  {
 
 @Test
 public void tc2() throws FileNotFoundException, IOException {
-	String name="apitesti"+JavaUtility.getRanDomNum();
+	String name="apitestioi"+JavaUtility.getRanDomNum();
 	Project p=new Project(name);
 	
 	Response resp = given()
-	.auth().oauth2("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")
+	.auth().oauth2("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")
 	.contentType(ContentType.JSON)
 	.body(p)
 	.post("https://api.github.com/user/repos");
@@ -40,7 +40,7 @@ public void tc2() throws FileNotFoundException, IOException {
 
 	Project p1=new Project(name,"Hello dummy project");
 	given()
-	.auth().oauth2("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")
+	.auth().oauth2("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")
 	.contentType(ContentType.JSON)
 	.body(p1)
 	.pathParam("ownerName",fileutilies.getData("username"))

@@ -6,12 +6,12 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
-import com.TestYantra.USAPIproject.genericLib.BaseClass;
+
 import com.TestYantra.USAPIproject.genericLib.IEndPoints;
 
 import io.restassured.http.ContentType;
 
-public class GetOperation extends BaseClass{
+public class GetOperation extends com.TestYantra.USAP1Project.scripts.BaseClass{
 @Test
 public void tc1() throws FileNotFoundException, IOException {
 	given()
