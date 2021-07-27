@@ -3,13 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.TestYantra.USAP1Project.scripts.PostOperation">
+      <class name="com.TestYantra.USAP1Project.scripts.DeleteOperation">
         <methods>
-          <include name="tc2"/>
-          <include name="configAS"/>
-          <include name="configBS"/>
+          <include name="tc3"/>
         </methods>
-      </class> <!-- com.TestYantra.USAP1Project.scripts.PostOperation -->
+      </class> <!-- com.TestYantra.USAP1Project.scripts.DeleteOperation -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

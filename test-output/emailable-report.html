@@ -9,22 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10,098</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">15,994</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.TestYantra.USAP1Project.scripts.GetOperation</td><td><a href="#m0">configAS</a></td><td rowspan="1">1627008535809</td><td rowspan="1">1</td></tr><tr class="failedodd"><td rowspan="1">com.TestYantra.USAP1Project.scripts.PostOperation</td><td><a href="#m1">configAS</a></td><td rowspan="1">1627008535389</td><td rowspan="1">0</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TestYantra.USAP1Project.scripts.DeleteOperation</td><td><a href="#m2">tc3</a></td><td rowspan="1">1627008525773</td><td rowspan="1">4993</td></tr><tr class="passedodd"><td rowspan="1">com.TestYantra.USAP1Project.scripts.GetOperation</td><td><a href="#m3">tc1</a></td><td rowspan="1">1627008535399</td><td rowspan="1">407</td></tr><tr class="passedeven"><td rowspan="1">com.TestYantra.USAP1Project.scripts.PostOperation</td><td><a href="#m4">tc2</a></td><td rowspan="1">1627008530815</td><td rowspan="1">4570</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.TestYantra.USAP1Project.scripts.DeleteOperation</td><td><a href="#m0">tc3</a></td><td rowspan="1">1627352760189</td><td rowspan="1">2638</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.TestYantra.USAP1Project.scripts.DeleteOperation</td><td><a href="#m1">tc2</a></td><td rowspan="1">1627352762911</td><td rowspan="1">8712</td></tr><tr class="passedodd"><td rowspan="1">com.TestYantra.USAP1Project.scripts.GetOperation</td><td><a href="#m2">tc1</a></td><td rowspan="1">1627352775685</td><td rowspan="1">409</td></tr><tr class="passedeven"><td rowspan="1">com.TestYantra.USAP1Project.scripts.PostOperation</td><td><a href="#m3">tc2</a></td><td rowspan="1">1627352771634</td><td rowspan="1">4037</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.TestYantra.USAP1Project.scripts.GetOperation#configAS</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.sql.Connection.close()&quot; because &quot;this.con&quot; is null
-	at com.TestYantra.USAPIproject.genericLib.DataBaseUtilies.closedb(DataBaseUtilies.java:43)
-	at com.TestYantra.USAPIproject.genericLib.BaseClass.configAS(BaseClass.java:22)
+<h2>Test</h2><h3 id="m0">com.TestYantra.USAP1Project.scripts.DeleteOperation#tc3</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: parameterValue cannot be null
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:55)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.pathParam(RequestSpecificationImpl.groovy:514)
+	at com.TestYantra.USAP1Project.scripts.DeleteOperation.tc3(DeleteOperation.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.TestYantra.USAP1Project.scripts.PostOperation#configAS</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;java.sql.Connection.close()&quot; because &quot;this.con&quot; is null
-	at com.TestYantra.USAPIproject.genericLib.DataBaseUtilies.closedb(DataBaseUtilies.java:43)
-	at com.TestYantra.USAPIproject.genericLib.BaseClass.configAS(BaseClass.java:22)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.TestYantra.USAP1Project.scripts.DeleteOperation#tc3</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.TestYantra.USAP1Project.scripts.GetOperation#tc1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.TestYantra.USAP1Project.scripts.PostOperation#tc2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.TestYantra.USAP1Project.scripts.DeleteOperation#tc2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.TestYantra.USAP1Project.scripts.GetOperation#tc1</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.TestYantra.USAP1Project.scripts.PostOperation#tc2</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
